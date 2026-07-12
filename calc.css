@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+header{
+    background: #292828;
+    padding: 20px 8% 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+main{
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    background-color: #1d1d1d;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 3px 0px 5px white;
+    position: relative;
+}
+
+#display{
+    background-color: #222222;
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    text-align: left;
+    border: 3px solid rgb(92, 92, 92);
+    margin-bottom: 20px;
+    color: #dfdfdf;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.keys{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+main button{
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif                                                   ;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.btn1{
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2{
+    background-color: #333333;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2:hover{
+    background-color: #851d1d;
+}
+
+.btn1:hover{
+    background-color: orange;
+}
+
+.btn3{
+    height: 50px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 58px;
+    right: 50px;
+    background: grey;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.social-icons{
+    margin-top:10px;
+}
+
+
+
+.social-icons i{
+
+    font-size:25px;
+
+    margin:0 10px;
+
+    color:#ffffff;
+
+}
+
+.social-icons a{
+    list-style-type: none;
+}
+
+@media(max-width: 900px){
+    .calculator{
+        width: 80%;
+    }
+
+    .social-icons i{
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+    
+    .btn3{
+        bottom: 58px;
+        right: 15px;
+    }
+}
